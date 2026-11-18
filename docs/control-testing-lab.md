@@ -1,4 +1,6 @@
-# Independent Backup Recovery Lab — Proposed, Not Performed
+# Independent Synthetic Backup Recovery Lab — Procedure and Results
+
+**Execution status:** Performed on 2026-11-18 with synthetic files only. The actual results are recorded in [`results.json`](../lab/backup-recovery/runs/run-20261118T042351Z/results.json). This does not test the nonprofit's controls or backups.
 
 ## Purpose and boundary
 
@@ -20,19 +22,20 @@ Demonstrate a repeatable recovery-control test using synthetic files on Samin's 
 - Negative test: deliberately altered content is flagged as a mismatch.
 - Results refer only to synthetic files and the test environment.
 
-## Results worksheet
+## Recorded synthetic-lab results
 
-| Field | Value |
+| Field | Actual result |
 | --- | --- |
-| Execution date and operator | Not performed |
-| OS and tools | To record |
-| Expected file count | To record |
-| Actual restored count | Not measured |
-| Hash matches/mismatches | Not measured |
-| Corruption detection | Not tested |
-| Evidence location | None |
-| Assessment conclusion | No result available |
+| Execution date | 2026-11-18 UTC |
+| Runtime | Python 3.14.6 on macOS 26.6.2 arm64 |
+| Expected files | 3 |
+| Restored files | 3 |
+| Positive restore | PASS; 3/3 files matched baseline SHA-256 hashes, with no missing, unexpected, or mismatched files |
+| Negative corruption check | PASS; altered `sample-records.csv` was detected by hash mismatch |
+| Overall lab result | PASS for both synthetic-data checks |
+| Evidence | [Machine-readable results](../lab/backup-recovery/runs/run-20261118T042351Z/results.json) |
+| Nonprofit test status | Not performed |
 
 ## Limits
 
-This does not test automated scheduling, encryption, access controls, offsite isolation, ransomware resistance, production applications, retention, or organization-wide recovery. A later implementation can add Python verification, but no script or successful execution is claimed in this package.
+This does not test automated scheduling, encryption, access controls, offsite isolation, ransomware resistance, production applications, retention, or organization-wide recovery. The Python implementation and actual run evidence are stored under `lab/backup-recovery/`. No nonprofit control test or implementation is claimed.
