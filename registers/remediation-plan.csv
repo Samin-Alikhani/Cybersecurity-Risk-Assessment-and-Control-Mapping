@@ -1,8 +1,8 @@
 Action ID,Risk IDs,Proposed owner role,Proposed action,Completion evidence,Due date,Approval,Status
-A01,R03,Leadership,Designate primary and backup incident contacts,Leadership confirmation and current contact record,Not assigned,Not obtained,Proposed
-A02,R01,Authorized administrator,Review service/account MFA coverage and document exceptions,Scoped settings evidence and approved exception list,Not assigned,Not obtained,Proposed
-A03,R02,Access owner,Document access approval and removal procedures,Procedure plus authorized sample evidence,Not assigned,Not obtained,Proposed
-A04,R03,Incident coordinator,Document reporting and response steps,Approved contacts and procedure; tabletop only if separately performed,Not assigned,Not obtained,Proposed
-A05,R04,Training coordinator,Establish awareness and phishing reporting guidance,Materials; completion records; refresh plan,Not assigned,Not obtained,Proposed
-A06,R05;R07,Service and asset owners,Maintain technology and provider inventories,Dated inventory; scope; responsible roles,Not assigned,Not obtained,Proposed
-A07,R06,Backup owner,Validate recovery scope and plan a restore test,Recovery procedure and actual authorized test evidence,Not assigned,Not obtained,Proposed
+A01,R-03,Leadership,Designate primary and backup incident contacts,Leadership confirmation and current contact record,Not assigned,Not obtained,Proposed
+A02,R-01,Authorized administrator,Review service/account MFA coverage and document exceptions,Scoped settings evidence and approved exception list,Not assigned,Not obtained,Proposed
+A03,R-02,Access owner,Document access approval and removal procedures,Procedure plus authorized sample evidence,Not assigned,Not obtained,Proposed
+A04,R-03,Incident coordinator,Document reporting and response steps,Approved contacts and procedure; tabletop only if separately performed,Not assigned,Not obtained,Proposed
+A05,R-04,Training coordinator,Establish awareness and phishing reporting guidance,Materials; completion records; refresh plan,Not assigned,Not obtained,Proposed
+A06,R-05;R-07,Service and asset owners,Maintain technology and provider inventories,Dated inventory; scope; responsible roles,Not assigned,Not obtained,Proposed
+A07,R-06,Backup owner,Validate recovery scope and plan a restore test,Recovery procedure and actual authorized test evidence,Not assigned,Not obtained,Proposed
