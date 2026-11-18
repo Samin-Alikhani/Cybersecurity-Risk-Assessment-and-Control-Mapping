@@ -103,7 +103,7 @@ Owners are proposed roles, not assigned people. Dates, budgets, acceptance decis
 
 The control worksheet defines evidence requests and procedures for a future authorized assessment. Every procedure is **Not performed**. The original project must not be represented as a technical control test.
 
-A separate synthetic-data backup recovery lab is proposed to demonstrate test design, evidence recording, and result analysis. Any completed lab results apply only to that lab, not to the nonprofit. It will not establish full CIS compliance.
+The separate synthetic-data backup recovery lab was run. The positive restore check matched all three files' hashes, and the negative check detected a deliberately altered copy. These results apply only to synthetic files in that lab, not to the nonprofit, and do not establish full CIS compliance. The organizational procedures in the control-assessment worksheet remain not performed. See [`lab/backup-recovery/`](../lab/backup-recovery/) for the script and actual result record.
 
 ## 10. Conclusion
 
