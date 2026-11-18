@@ -1,6 +1,6 @@
 # Cybersecurity Risk Assessment: Anonymized Nonprofit Case Study
 
-**Status:** Anonymized portfolio draft derived from an academic team report. No organization systems were tested. New portfolio analysis is proposed and requires review.
+**Project scope:** An anonymized analysis of a questionnaire-based team assessment. No organizational systems were tested; supplemental mapping, risk, and procedure materials describe proposed follow-up only.
 
 ## 1. Executive assessment
 
@@ -14,28 +14,28 @@ Recommended first steps are to assign accountable contacts, confirm MFA coverage
 
 The original academic project addressed security controls, training and awareness, and policies and plans through questionnaires. Technical testing was excluded by the assignment. This portfolio revision uses the supplied team report as its immediate evidence source: original questionnaires, configuration exports, policies, and supporting evidence were not provided for this revision.
 
-All organizational statements below therefore mean **reported in the source report**, rather than directly observed, independently verified, or confirmed current. No follow-up contact, system access, document inspection, or remediation implementation is claimed.
+All organizational statements below therefore mean **reported in the source report**, rather than directly observed, independently verified, or confirmed current. No follow-up validation, system access, or remediation implementation was performed.
 
 The analysis retains CIS Controls v8 as used by the original report. Selected safeguards organize follow-up questions and recommendations. NIST CSF 2.0 functions provide high-level context. This is not a full safeguard assessment, legal compliance determination, or control effectiveness opinion.
 
-The original project was completed by a team. Samin Alikhani confirmed responsibility for mapping reported gaps to CIS Controls and providing NIST references. The source report explicitly maps authentication gaps to Controls 5 and 6 and awareness gaps to Control 14; its NIST references appear in the strengths analysis. The expanded safeguard-level mappings and portfolio registers are AI-assisted drafts, not additional work completed for the nonprofit. Individual authorship of other original sections is not established.
+The original project was completed by a team. My contribution was mapping reported gaps to CIS Controls and providing NIST references. The source report maps authentication gaps to Controls 5 and 6 and awareness gaps to Control 14; its explicit NIST references appear in the strengths analysis. This portfolio adds safeguard-level refinements and follow-up analysis that were not validated with or implemented by the nonprofit. Other original analysis was completed collaboratively.
 
 ## 3. Scope inventory and information needs
 
 The report supports the existence of a distributed work environment, user accounts, systems receiving updates, backups, and vendor relationships. Exact platforms, device populations, data classifications, owners, and critical dependencies are unknown.
 
-Email, cloud storage, administrative accounts, and personal devices are areas proposed for follow-up, not a verified asset inventory. Do not assume payment processing, financial records, donor information, regulated data, or particular service providers.
+Email, cloud storage, administrative accounts, and personal devices are proposed follow-up areas, not a verified asset inventory. The source report does not establish whether the organization processes payments, holds financial or donor records, handles regulated data, or uses particular service providers; these matters remain outside scope pending evidence.
 
 An inventory should record asset or service identifier, purpose, owner, access method, relevant data category, business criticality, and review date. All these values remain to be collected by authorized personnel.
 
 ## 4. Evidence classification
 
-Use separate labels for implementation and verification:
+Evidence status is classified as:
 
 - **Reported present:** the report describes a practice; completeness and effectiveness remain unverified.
 - **Reported gap:** the report describes an absent or inconsistent practice; current status requires confirmation.
 - **Unknown:** the available material does not establish the answer.
-- **Verified:** reserve for a later assessment with recorded evidence and an authorized procedure. No organizational item currently has this status.
+- **Verified:** supported by recorded evidence from an authorized assessment. No organizational item in this portfolio is verified.
 
 Missing documentation does not automatically mean a technical safeguard is absent. Conversely, a reported policy or setting does not establish that it works or covers all relevant systems.
 
@@ -59,7 +59,7 @@ The source report maps practices at the Control level. Safeguard-level details i
 
 **R-03: Unassigned coordination and undocumented incident procedures.** The report identifies no formal security responsibility or incident plan. Delayed reporting and unclear decisions could prolong disruption. Propose a primary and backup incident contact, reporting instructions, and a short response procedure. Formal response-plan development is relevant beyond the minimum IG1 safeguards.
 
-**R-04: No formal awareness program.** Informal awareness may vary across staff and volunteers. A phishing attempt could succeed or go unreported. Propose role-appropriate training and clear reporting instructions; do not infer a measured susceptibility rate.
+**R-04: No formal awareness program.** Informal awareness may vary across staff and volunteers. A phishing attempt could succeed or go unreported. Proposed follow-up includes role-appropriate training and clear reporting instructions. No susceptibility rate was measured.
 
 **R-05: Incomplete technology visibility.** The report does not establish a centralized inventory. Unknown assets or services could miss access removal, updates, or recovery coverage. First confirm inventory status, then reconcile a scoped inventory against available authorized records.
 
@@ -103,7 +103,7 @@ Owners are proposed roles, not assigned people. Dates, budgets, acceptance decis
 
 The control worksheet defines evidence requests and procedures for a future authorized assessment. Every procedure is **Not performed**. The original project must not be represented as a technical control test.
 
-The separate synthetic-data backup recovery lab was run. The positive restore check matched all three files' hashes, and the negative check detected a deliberately altered copy. These results apply only to synthetic files in that lab, not to the nonprofit, and do not establish full CIS compliance. The organizational procedures in the control-assessment worksheet remain not performed. See [`lab/backup-recovery/`](../lab/backup-recovery/) for the script and actual result record.
+The separate synthetic-data backup recovery lab was run. The positive restore check matched all three files' hashes, and the negative check detected only the deliberately altered file. These results apply only to synthetic files, not to the nonprofit, and do not establish full CIS compliance. Organizational procedures CT01–CT05 remain not performed. See the [lab script](../lab/backup-recovery/run_lab.py) and [recorded results](../lab/backup-recovery/runs/run-20261118T044037Z/results.json).
 
 ## 10. Conclusion
 
