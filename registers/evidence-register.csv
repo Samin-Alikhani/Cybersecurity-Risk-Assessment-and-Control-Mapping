@@ -1,0 +1,10 @@
+Evidence ID,Source report statement,Implementation label,Requested evidence,Immediate source,Verification status
+E01,Backups performed and stored separately,Reported present,Backup schedule; scope; protection; restore records,Supplied academic team report; original questionnaire not reviewed,Not independently verified
+E02,Account creation and removal process,Reported present,Approved procedure; sampled access records,Supplied academic team report; original questionnaire not reviewed,Not independently verified
+E03,Automatic updates,Reported present,Coverage list; update status; exceptions,Supplied academic team report; original questionnaire not reviewed,Not independently verified
+E04,Vendor data-handling agreements,Reported present,Sanitized contract terms; provider inventory,Supplied academic team report; original questionnaire not reviewed,Not independently verified
+E05,Informal suspicious-activity awareness,Reported present,Training and reporting evidence,Supplied academic team report; original questionnaire not reviewed,Not independently verified
+E06,MFA not consistently enforced; no formal password requirements,Reported gap,Service/account scope; settings; exceptions,Supplied academic team report; original questionnaire not reviewed,Not independently verified
+E07,No formally assigned security responsibility or written incident plan,Reported gap,Current role assignments; procedures,Supplied academic team report; original questionnaire not reviewed,Not independently verified
+E08,No formal awareness program,Reported gap,Current training materials and completion records,Supplied academic team report; original questionnaire not reviewed,Not independently verified
+E09,Centralized technology inventory not established,Reported gap (current status unverified),Asset; software; cloud-service inventories,Supplied academic team report; original questionnaire not reviewed,Not independently verified
