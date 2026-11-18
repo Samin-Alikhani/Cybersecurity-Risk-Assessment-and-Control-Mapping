@@ -2,7 +2,7 @@
 
 ## Project overview
 
-This portfolio case study is an anonymized version of a student team report prepared for a Cyber Risk Management final project in collaboration with a real nonprofit organization in San Antonio, Texas. The assessment was based on questionnaire responses and did not include technical testing of the organization’s systems. The nonprofit is not named in this repository.
+This portfolio case study is an anonymized version of a student team report prepared for a Cyber Risk Management final project in collaboration with a real nonprofit organization. The assessment was based on questionnaire responses and did not include technical testing of the organization’s systems. The nonprofit is not named in this repository.
 
 ## Contribution
 
@@ -19,7 +19,7 @@ My contribution to the original team report was framework mapping: mapping repor
 - [Control-assessment worksheet](templates/control-assessment.csv)
 - [Synthetic backup recovery lab plan](docs/control-testing-lab.md)
 - [Lab instructions and script](lab/backup-recovery/README.md)
-- [Recorded lab results](lab/backup-recovery/runs/run-20261118T042351Z/results.json)
+- [Recorded lab results](lab/backup-recovery/runs/run-20261118T044037Z/results.json)
 
 ## Framework approach
 
