@@ -101,7 +101,7 @@ Owners are proposed roles, not assigned people. Dates, budgets, acceptance decis
 
 ## 9. Assessment procedures and independent lab
 
-The control worksheet defines evidence requests and procedures for a future authorized assessment. Every procedure is **Not performed**. The original project must not be represented as a technical control test.
+The control worksheet defines evidence requests and procedures for a future authorized assessment. Organizational assessment procedures CT01–CT05 have not been performed. CT06 records the completed independent synthetic-data lab. The original project must not be represented as a technical control test.
 
 The separate synthetic-data backup recovery lab was run. The positive restore check matched all three files' hashes, and the negative check detected only the deliberately altered file. These results apply only to synthetic files, not to the nonprofit, and do not establish full CIS compliance. Organizational procedures CT01–CT05 remain not performed. See the [lab script](../lab/backup-recovery/run_lab.py) and [recorded results](../lab/backup-recovery/runs/run-20261118T044037Z/results.json).
 
