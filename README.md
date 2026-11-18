@@ -1,36 +1,36 @@
 # Cybersecurity Risk Assessment and Control Mapping
 
-An anonymized questionnaire-based academic team assessment, developed into a portfolio case study focused on evidence traceability, framework-informed gap analysis, and practical control follow-up.
+## Project overview
 
-## Contribution and portfolio scope
+This anonymized case study develops a questionnaire-based cybersecurity assessment into a structured portfolio project. It connects reported practices and gaps to CIS Controls v8, organizes supporting evidence, and outlines practical risk treatment and control validation steps.
 
-- **Original team project:** assessed reported cybersecurity practices and gaps using questionnaire responses. No organizational systems were technically tested.
-- **My contribution:** mapped reported gaps to CIS Controls v8 and provided NIST CSF references.
-- **Portfolio extension:** adds an evidence register, safeguard-level mapping refinements, a provisional risk register, proposed remediation actions, and a control-assessment worksheet. These additions include AI-assisted drafting and are proposals, not work validated with or performed for the organization.
+## Contribution
 
-## Project files
+I mapped reported cybersecurity gaps to CIS Controls v8 and incorporated NIST Cybersecurity Framework references in the assessment. The original assessment was a collaborative team project; this repository distinguishes the source report's mappings from subsequent portfolio analysis.
 
-- [Assessment](docs/assessment.md)
+## Deliverables
+
+- [Assessment report](docs/assessment.md)
 - [Executive brief](docs/executive-brief.md)
 - [Framework mapping register](registers/framework-mapping.csv)
 - [Evidence register](registers/evidence-register.csv)
-- [Risk register](registers/risk-register.csv)
+- [Qualitative risk register](registers/risk-register.csv)
 - [Proposed remediation plan](registers/remediation-plan.csv)
 - [Control-assessment worksheet](templates/control-assessment.csv)
 - [Synthetic backup recovery lab plan](docs/control-testing-lab.md)
 - [Lab instructions and script](lab/backup-recovery/README.md)
-- [Recorded synthetic-lab results](lab/backup-recovery/runs/run-20261118T042351Z/results.json)
+- [Recorded lab results](lab/backup-recovery/runs/run-20261118T042351Z/results.json)
 
-## Method and limitations
+## Framework approach
 
-The portfolio uses the team report as its immediate evidence source; the original questionnaires and supporting organizational evidence were not reviewed for this case study. Evidence is labeled as reported, a reported gap, or unknown. No organizational control effectiveness, implementation, or risk reduction is claimed. Risk priorities are provisional, and likelihood and impact are not rated.
+CIS Controls v8 is retained to match the source assessment. The mapping register identifies source-report mappings and separates them from additional safeguard-level analysis. Implementation Group 2 and 3 safeguards are labeled. NIST CSF 2.0 functions provide thematic context; they are not presented as official CIS-to-NIST equivalences.
 
-The independent recovery lab used three synthetic files. All three restored with matching SHA-256 hashes, and a deliberately altered copy was detected. This result demonstrates only the lab procedure; it does not test the organization's backups or recovery capability.
+## Scope and limitations
 
-## Framework interpretation
+The original assessment relied on questionnaire responses. Organizational systems were not technically tested, and reported practices were not independently verified. Risk priorities are provisional; likelihood and impact were not rated.
 
-CIS Controls v8 is retained to match the source report. The mapping register distinguishes source-report mappings from suggested safeguard-level refinements and new portfolio mappings, and identifies safeguards outside IG1. NIST CSF 2.0 functions are used as thematic references, not as official CIS-to-NIST equivalences.
+A separate recovery lab used three synthetic files. All restored with matching SHA-256 hashes, and a deliberately altered copy was detected. This demonstrates the lab procedure only; it does not test the organization's backups or recovery capability.
 
-## Privacy
+## Anonymization
 
-The organization and its personnel are anonymized. The original report, questionnaires, contact details, and team member identities are not included. Context has been generalized, though anonymization cannot guarantee that the source organization is unrecognizable.
+The organization and its personnel are anonymized. Identifying contact and institutional details, the source report, and questionnaires are excluded. Case details have been generalized.
