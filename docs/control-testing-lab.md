@@ -1,10 +1,10 @@
 # Independent Synthetic Backup Recovery Lab — Procedure and Results
 
-**Execution status:** Performed on 2026-11-18 with synthetic files only. The actual results are recorded in [`results.json`](../lab/backup-recovery/runs/run-20261118T042351Z/results.json). This does not test the nonprofit's controls or backups.
+**Execution status:** Performed on 2026-11-18 with synthetic files only. The actual results are recorded in [`results.json`](../lab/backup-recovery/runs/run-20261118T044037Z/results.json). This does not test the nonprofit's controls or backups.
 
 ## Purpose and boundary
 
-Demonstrate a repeatable recovery-control test using synthetic files on Samin's own machine. No nonprofit data, accounts, devices, or services are in scope. This plan relates to CIS v8 Control 11; 11.5 recovery testing is IG2/IG3, and completion does not establish full safeguard implementation.
+Demonstrate a repeatable restore-integrity procedure using synthetic files in a local environment. No nonprofit data, accounts, devices, or services are in scope. This plan relates to CIS v8 Control 11; 11.5 recovery testing is IG2/IG3, and completion does not establish full safeguard implementation.
 
 ## Procedure
 
@@ -19,7 +19,7 @@ Demonstrate a repeatable recovery-control test using synthetic files on Samin's 
 ## Acceptance criteria
 
 - Positive test: all expected files restore with matching hashes.
-- Negative test: deliberately altered content is flagged as a mismatch.
+- Negative test: the deliberately altered file is the only file flagged as a mismatch.
 - Results refer only to synthetic files and the test environment.
 
 ## Recorded synthetic-lab results
@@ -38,4 +38,4 @@ Demonstrate a repeatable recovery-control test using synthetic files on Samin's 
 
 ## Limits
 
-This does not test automated scheduling, encryption, access controls, offsite isolation, ransomware resistance, production applications, retention, or organization-wide recovery. The Python implementation and actual run evidence are stored under `lab/backup-recovery/`. No nonprofit control test or implementation is claimed.
+This does not test automated scheduling, encryption, access controls, offsite isolation, ransomware resistance, production applications, retention, or organization-wide recovery. The script and run evidence are stored under `lab/backup-recovery/`. These results do not establish the nonprofit's backup recoverability or implementation of any CIS safeguard.
