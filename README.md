@@ -1,13 +1,13 @@
 # Cybersecurity Risk Assessment and Control Mapping
 
-Private portfolio working draft based on an anonymized academic team assessment of a nonprofit. It includes an evidence register, selected CIS Controls v8 mappings, a provisional qualitative risk register, and proposed control-assessment procedures.
+Public portfolio draft based on an anonymized academic team assessment of a nonprofit. It includes an evidence register, selected CIS Controls v8 mappings, a provisional qualitative risk register, and proposed control-assessment procedures.
 
 ## Contribution and status
 
 - The original assessment was a team project based on questionnaire responses. No technical testing was performed.
 - Samin's confirmed contribution was mapping reported gaps to CIS Controls and providing NIST references. Other original analysis, recommendations, and writing remain attributed to the team.
 - The portfolio additions are AI-assisted drafts for Samin's review. New safeguard-level mappings, risk priorities, procedures, and action plans were not verified with the organization or implemented.
-- The repository is private for review. Public release has not been authorized.
+- This repository is public at the author's direction; the portfolio remains a draft for review.
 - This is not an audit, certification, full CIS IG1 assessment, or claim of implemented organizational improvements.
 
 ## Files
