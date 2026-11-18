@@ -35,4 +35,4 @@ CIS Controls v8 is retained to match the source report. The mapping register sep
 
 - Contributed framework mappings for reported gaps and NIST references in a questionnaire-based cybersecurity assessment, using CIS Controls v8 and NIST CSF guidance.
 
-Use only wording that accurately reflects your contribution. Do not claim the AI-assisted portfolio additions as completed organizational work; control testing remains planned.
+Use only wording that accurately reflects your contribution. Do not claim the AI-assisted portfolio additions as completed organizational work. Organizational control testing remains unperformed; the separate synthetic-data lab is documented under `lab/backup-recovery/`.
