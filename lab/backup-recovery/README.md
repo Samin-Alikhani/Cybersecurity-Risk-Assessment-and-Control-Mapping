@@ -10,7 +10,7 @@ From this directory, run:
 python3 run_lab.py
 ```
 
-The script uses only the Python standard library. Each run creates a new timestamped directory under `runs/`; it refuses to overwrite existing runs and does not delete or modify files outside its new run directory.
+Requires Python 3.10 or later and uses only the standard library. Each run creates a new timestamped directory under `runs/`; existing runs are preserved, and no files outside the new run directory are modified.
 
 ## What it checks
 
@@ -19,8 +19,8 @@ The script uses only the Python standard library. Each run creates a new timesta
 3. Creates a separate copy of the backup, alters one synthetic file, restores that copy, and confirms that hash comparison detects the change.
 4. Writes the actual run details and results to `runs/<run-id>/results.json`.
 
-The positive check passes only when all expected files are restored with matching hashes. The negative check passes only when the deliberately altered copy is detected. A pass demonstrates only this script's behavior on these synthetic files. It does not demonstrate scheduled, encrypted, isolated, offsite, ransomware-resistant, or production backups.
+The positive check passes only when all expected files are restored with matching hashes. The negative check passes only when `sample-records.csv` is the sole hash mismatch. A pass demonstrates only this script's behavior on these synthetic files. It does not demonstrate scheduled, encrypted, isolated, offsite, ransomware-resistant, or production backups.
 
 ## Evidence
 
-The [recorded run](runs/run-20261118T042351Z/results.json) is the actual result from this execution. Keep subsequent results as separate run records; do not replace actual results with expected results. It records the run time, Python and operating-system versions, file counts, hashes, mismatches, and actual outcomes. Do not replace actual results with expected results. Each run is independent and retained; the script does not clean up old runs.
+The [recorded run](runs/run-20261118T044037Z/results.json) is the actual result from this execution. Each run directory retains the baseline, backup, restored files, altered-copy fixtures, and `results.json`. The result records the runtime, file counts, hashes, mismatches, and outcomes; subsequent runs are retained separately.
