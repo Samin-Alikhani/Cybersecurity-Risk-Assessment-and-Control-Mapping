@@ -23,4 +23,4 @@ The positive check passes only when all expected files are restored with matchin
 
 ## Evidence
 
-The [recorded run](runs/run-20261118T044037Z/results.json) is the actual result from this execution. Each run directory retains the baseline, backup, restored files, altered-copy fixtures, and `results.json`. The result records the runtime, file counts, hashes, mismatches, and outcomes; subsequent runs are retained separately.
+The [recorded run](runs/run-20261118T044037Z/results.json) is the actual result from this execution. Local runs retain the baseline, backup, restored files, altered-copy fixtures, and `results.json`. The repository publishes the timestamped result records; synthetic file fixtures remain local. Results record runtime, file counts, hashes, mismatches, and outcomes, with subsequent result records retained separately.
