@@ -1,38 +1,36 @@
 # Cybersecurity Risk Assessment and Control Mapping
 
-Public portfolio draft based on an anonymized academic team assessment of a nonprofit. It includes an evidence register, selected CIS Controls v8 mappings, a provisional qualitative risk register, and proposed control-assessment procedures.
+An anonymized questionnaire-based academic team assessment, developed into a portfolio case study focused on evidence traceability, framework-informed gap analysis, and practical control follow-up.
 
-## Contribution and status
+## Contribution and portfolio scope
 
-- The original assessment was a team project based on questionnaire responses. No technical testing was performed.
-- Samin's confirmed contribution was mapping reported gaps to CIS Controls and providing NIST references. Other original analysis, recommendations, and writing remain attributed to the team.
-- The portfolio additions are AI-assisted drafts for Samin's review. New safeguard-level mappings, risk priorities, procedures, and action plans were not verified with the organization or implemented.
-- This repository is public at the author's direction; the portfolio remains a draft for review.
-- This is not an audit, certification, full CIS IG1 assessment, or claim of implemented organizational improvements.
+- **Original team project:** assessed reported cybersecurity practices and gaps using questionnaire responses. No organizational systems were technically tested.
+- **My contribution:** mapped reported gaps to CIS Controls v8 and provided NIST CSF references.
+- **Portfolio extension:** adds an evidence register, safeguard-level mapping refinements, a provisional risk register, proposed remediation actions, and a control-assessment worksheet. These additions include AI-assisted drafting and are proposals, not work validated with or performed for the organization.
 
-## Files
+## Project files
 
-- [Revised assessment](docs/assessment.md)
+- [Assessment](docs/assessment.md)
 - [Executive brief](docs/executive-brief.md)
 - [Framework mapping register](registers/framework-mapping.csv)
 - [Evidence register](registers/evidence-register.csv)
 - [Risk register](registers/risk-register.csv)
 - [Proposed remediation plan](registers/remediation-plan.csv)
 - [Control-assessment worksheet](templates/control-assessment.csv)
-- [Independent synthetic-data backup recovery lab plan](docs/control-testing-lab.md)
+- [Synthetic backup recovery lab plan](docs/control-testing-lab.md)
+- [Lab instructions and script](lab/backup-recovery/README.md)
+- [Recorded synthetic-lab results](lab/backup-recovery/runs/run-20261118T042351Z/results.json)
 
-## Privacy and attribution
+## Method and limitations
 
-The source organization, contact details, coauthors, instructor, institution, original report title, and exact organization size are excluded. The case is described generally as a nonprofit; anonymization cannot guarantee that the source organization is unrecognizable. Original questionnaires and supporting organizational evidence are not included. Do not add them to this repository.
+The portfolio uses the team report as its immediate evidence source; the original questionnaires and supporting organizational evidence were not reviewed for this case study. Evidence is labeled as reported, a reported gap, or unknown. No organizational control effectiveness, implementation, or risk reduction is claimed. Risk priorities are provisional, and likelihood and impact are not rated.
 
-## Framework use
+The independent recovery lab used three synthetic files. All three restored with matching SHA-256 hashes, and a deliberately altered copy was detected. This result demonstrates only the lab procedure; it does not test the organization's backups or recovery capability.
 
-CIS Controls v8 is retained to match the source report. The mapping register separates source-report mappings from suggested safeguard-level refinements and new portfolio mappings. IG2/IG3 safeguards are labeled explicitly. NIST CSF 2.0 functions are thematic references only; no official CIS-to-NIST equivalence is asserted. The gap-to-NIST references added to the assessment are portfolio interpretations, not mappings stated in the source gap narratives.
+## Framework interpretation
 
-## Draft resume wording
+CIS Controls v8 is retained to match the source report. The mapping register distinguishes source-report mappings from suggested safeguard-level refinements and new portfolio mappings, and identifies safeguards outside IG1. NIST CSF 2.0 functions are used as thematic references, not as official CIS-to-NIST equivalences.
 
-**Academic Team Project — Cybersecurity Risk Assessment**
+## Privacy
 
-- Contributed framework mappings for reported gaps and NIST references in a questionnaire-based cybersecurity assessment, using CIS Controls v8 and NIST CSF guidance.
-
-Use only wording that accurately reflects your contribution. Do not claim the AI-assisted portfolio additions as completed organizational work. Organizational control testing remains unperformed; the separate synthetic-data lab is documented under `lab/backup-recovery/`.
+The organization and its personnel are anonymized. The original report, questionnaires, contact details, and team member identities are not included. Context has been generalized, though anonymization cannot guarantee that the source organization is unrecognizable.
