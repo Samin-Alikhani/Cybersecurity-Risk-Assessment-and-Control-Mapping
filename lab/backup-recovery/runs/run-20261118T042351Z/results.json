@@ -1,0 +1,35 @@
+{
+  "expected_file_count": 3,
+  "expected_sha256": {
+    "sample-config.txt": "3e8bf33ef2e6217474b149dc83e16a5a47cb5ed81b036cf11e36a7a37dbd9a34",
+    "sample-notes.txt": "f8c7d4d04ad7fae0981e8f8a482e82f67c473f7c8f2b98751a2b166ccf8dbca7",
+    "sample-records.csv": "da8f2a96585a90ccb57f0ff0f14cf9aa7032c6003d440d06cd23afc5d6c2e647"
+  },
+  "finished_utc": "2026-11-18T04:23:51.701123+00:00",
+  "lab": "Synthetic backup recovery integrity demonstration",
+  "limitations": [
+    "Does not test automated scheduling, encryption, access control, offsite isolation, ransomware resistance, production applications, retention, or organizational recovery.",
+    "A copy on the same machine is not an isolated or disaster-resilient backup.",
+    "Results apply only to the synthetic files and this execution."
+  ],
+  "negative_corruption_detection": {
+    "deliberately_altered_file": "sample-records.csv",
+    "detected_hash_mismatches": [
+      "sample-records.csv"
+    ],
+    "status": "PASS"
+  },
+  "overall_status": "PASS",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "positive_restore": {
+    "hash_mismatches": [],
+    "missing_files": [],
+    "status": "PASS",
+    "unexpected_files": []
+  },
+  "python_version": "3.14.6",
+  "restored_file_count": 3,
+  "run_id": "run-20261118T042351Z",
+  "scope": "Synthetic files only; no nonprofit data, systems, or controls tested.",
+  "started_utc": "2026-11-18T04:23:51.697041+00:00"
+}
