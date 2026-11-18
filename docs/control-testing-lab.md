@@ -1,6 +1,6 @@
 # Independent Synthetic Backup Recovery Lab — Procedure and Results
 
-**Execution status:** Performed on 2026-11-18 with synthetic files only. The actual results are recorded in [`results.json`](../lab/backup-recovery/runs/run-20261118T044037Z/results.json). This does not test the nonprofit's controls or backups.
+**Execution status:** Performed on 2026-11-18 with synthetic files only. The actual results are recorded in [results.json](../lab/backup-recovery/runs/run-20261118T044037Z/results.json). This does not test the nonprofit's controls or backups.
 
 ## Purpose and boundary
 
@@ -33,7 +33,7 @@ Demonstrate a repeatable restore-integrity procedure using synthetic files in a 
 | Positive restore | PASS; 3/3 files matched baseline SHA-256 hashes, with no missing, unexpected, or mismatched files |
 | Negative corruption check | PASS; altered `sample-records.csv` was detected by hash mismatch |
 | Overall lab result | PASS for both synthetic-data checks |
-| Evidence | [Machine-readable results](../lab/backup-recovery/runs/run-20261118T042351Z/results.json) |
+| Evidence | [Machine-readable results](../lab/backup-recovery/runs/run-20261118T044037Z/results.json) |
 | Nonprofit test status | Not performed |
 
 ## Limits
