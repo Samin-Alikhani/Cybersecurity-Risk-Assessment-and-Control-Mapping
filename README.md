@@ -2,11 +2,11 @@
 
 ## Project overview
 
-This anonymized case study develops a questionnaire-based cybersecurity assessment into a structured portfolio project. It connects reported practices and gaps to CIS Controls v8, organizes supporting evidence, and outlines practical risk treatment and control validation steps.
+This portfolio case study is an anonymized version of a student team report prepared for a Cyber Risk Management final project in collaboration with a real nonprofit organization in San Antonio, Texas. The assessment was based on questionnaire responses and did not include technical testing of the organization’s systems. The nonprofit is not named in this repository.
 
 ## Contribution
 
-I mapped reported cybersecurity gaps to CIS Controls v8 and incorporated NIST Cybersecurity Framework references in the assessment. The original assessment was a collaborative team project; this repository distinguishes the source report's mappings from subsequent portfolio analysis.
+My contribution to the original team report was framework mapping: mapping reported cybersecurity gaps to CIS Controls v8 and incorporating NIST Cybersecurity Framework references. The assessment and its other original analysis were completed collaboratively. This portfolio adds structured evidence, risk, remediation, and control-assessment materials.
 
 ## Deliverables
 
@@ -23,14 +23,14 @@ I mapped reported cybersecurity gaps to CIS Controls v8 and incorporated NIST Cy
 
 ## Framework approach
 
-CIS Controls v8 is retained to match the source assessment. The mapping register identifies source-report mappings and separates them from additional safeguard-level analysis. Implementation Group 2 and 3 safeguards are labeled. NIST CSF 2.0 functions provide thematic context; they are not presented as official CIS-to-NIST equivalences.
+CIS Controls v8 is retained to match the source report. The mapping register identifies mappings present in the original report and distinguishes them from additional safeguard-level analysis. Implementation Group 2 and 3 safeguards are labeled. NIST CSF 2.0 functions provide thematic context; they are not presented as official CIS-to-NIST equivalences.
 
 ## Scope and limitations
 
-The original assessment relied on questionnaire responses. Organizational systems were not technically tested, and reported practices were not independently verified. Risk priorities are provisional; likelihood and impact were not rated.
+Reported practices were not independently verified. Risk priorities are provisional; likelihood and impact were not rated. No organizational control effectiveness, implementation, or risk reduction is claimed.
 
-A separate recovery lab used three synthetic files. All restored with matching SHA-256 hashes, and a deliberately altered copy was detected. This demonstrates the lab procedure only; it does not test the organization's backups or recovery capability.
+A separate recovery lab used three synthetic files. All restored with matching SHA-256 hashes, and a deliberately altered copy was detected. This demonstrates the lab procedure only; it does not test the nonprofit's backups or recovery capability.
 
 ## Anonymization
 
-The organization and its personnel are anonymized. Identifying contact and institutional details, the source report, and questionnaires are excluded. Case details have been generalized.
+The nonprofit and its personnel are unnamed. Identifying contact, team, and institutional details, the original report, and questionnaires are excluded. Case details have been generalized.
