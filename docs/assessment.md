@@ -67,6 +67,20 @@ The source report maps practices at the Control level. Safeguard-level details i
 
 **R-07: Vendor assurance is incomplete.** Agreements are reported, but an inventory and systematic review are not established. Dependencies or data-handling responsibilities may remain unclear. Request an inventory before judging contract or oversight coverage.
 
+### NIST CSF 2.0 thematic references for the reported gaps
+
+These function-level references are a new portfolio interpretation. The original report's explicit NIST references appear in its strengths analysis, not alongside these gap narratives. The references below are thematic context only, not an official CIS-to-NIST crosswalk or evidence that an outcome is implemented.
+
+| Risk | Suggested CSF 2.0 function(s) | Why the theme is relevant |
+| --- | --- | --- |
+| R-01 Authentication requirements | Protect | Identity, authentication, and access control are relevant to the reported password and MFA gaps. |
+| R-02 Access processes | Protect; Govern | Access control is relevant to provisioning and revocation; governance is relevant to documenting accountable procedures. |
+| R-03 Incident coordination | Govern; Respond | Governance covers responsibility and authority; Respond covers incident reporting and handling. |
+| R-04 Awareness and training | Protect | Awareness and training are part of reducing workforce-related security risk. |
+| R-05 Technology inventory | Identify | Asset management provides context for establishing a scoped technology inventory. |
+| R-06 Backup recoverability | Recover | Recovery outcomes provide context for validating whether backups can support restoration. |
+| R-07 Service-provider visibility | Govern; Identify | Supply-chain risk management and service-provider inventory are relevant to vendor oversight and visibility. |
+
 ## 7. Qualitative prioritization
 
 The accompanying risk register uses provisional High/Medium priorities to sequence follow-up. They are portfolio analyst judgments, not measured organizational risk or management-approved ratings. Likelihood and impact remain **Not rated** until platform scope, data sensitivity, exposure, and operational dependencies are established.
