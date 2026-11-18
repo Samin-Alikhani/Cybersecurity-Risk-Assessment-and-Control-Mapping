@@ -27,7 +27,7 @@ The source organization, contact details, coauthors, instructor, institution, or
 
 ## Framework use
 
-CIS Controls v8 is retained to match the source report. The mapping register separates source-report mappings from suggested safeguard-level refinements and new portfolio mappings. IG2/IG3 safeguards are labeled explicitly. NIST CSF 2.0 functions are thematic references only; no official CIS-to-NIST equivalence is asserted.
+CIS Controls v8 is retained to match the source report. The mapping register separates source-report mappings from suggested safeguard-level refinements and new portfolio mappings. IG2/IG3 safeguards are labeled explicitly. NIST CSF 2.0 functions are thematic references only; no official CIS-to-NIST equivalence is asserted. The gap-to-NIST references added to the assessment are portfolio interpretations, not mappings stated in the source gap narratives.
 
 ## Draft resume wording
 
