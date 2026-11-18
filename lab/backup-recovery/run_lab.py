@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-import os
 import platform
 import shutil
 import sys
@@ -86,9 +85,10 @@ def main() -> int:
         name for name in set(expected_hashes) & set(altered_hashes)
         if expected_hashes[name] != altered_hashes[name]
     )
+    expected_negative_mismatches = ["sample-records.csv"]
     negative_pass = (
         set(expected_hashes) == set(altered_hashes)
-        and bool(negative_mismatches)
+        and negative_mismatches == expected_negative_mismatches
     )
 
     end = datetime.now(timezone.utc)
@@ -112,6 +112,7 @@ def main() -> int:
         "negative_corruption_detection": {
             "status": "PASS" if negative_pass else "FAIL",
             "deliberately_altered_file": "sample-records.csv",
+            "expected_hash_mismatches": expected_negative_mismatches,
             "detected_hash_mismatches": negative_mismatches,
         },
         "overall_status": "PASS" if positive_pass and negative_pass else "FAIL",
