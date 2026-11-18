@@ -2,34 +2,42 @@
 
 ## Project overview
 
-This portfolio case study is an anonymized version of a student team report prepared for a Cyber Risk Management final project in collaboration with a real nonprofit organization. The assessment was based on questionnaire responses and did not include technical testing of the organization’s systems. The nonprofit is not named in this repository.
+This portfolio case study is an anonymized version of a student team assessment completed for a Cyber Risk Management final project in collaboration with a real nonprofit organization. The assessment used questionnaire responses; the organization and its personnel are not identified here.
 
 ## Contribution
 
-My contribution to the original team report was framework mapping: mapping reported cybersecurity gaps to CIS Controls v8 and incorporating NIST Cybersecurity Framework references. The assessment and its other original analysis were completed collaboratively. This portfolio adds structured evidence, risk, remediation, and control-assessment materials.
+My contribution to the original team report was framework mapping: connecting reported cybersecurity gaps to CIS Controls v8 and incorporating NIST Cybersecurity Framework references. The original assessment and its other analysis were completed collaboratively. This portfolio organizes the mappings and adds evidence, risk, remediation, assessment-procedure, and independent lab materials.
 
-## Deliverables
+## Findings summary
 
-- [Assessment report](docs/assessment.md)
-- [Executive brief](docs/executive-brief.md)
-- [Framework mapping register](registers/framework-mapping.csv)
-- [Evidence register](registers/evidence-register.csv)
-- [Qualitative risk register](registers/risk-register.csv)
-- [Proposed remediation plan](registers/remediation-plan.csv)
-- [Control-assessment worksheet](templates/control-assessment.csv)
-- [Synthetic backup recovery lab plan](docs/control-testing-lab.md)
-- [Lab instructions and script](lab/backup-recovery/README.md)
-- [Recorded lab results](lab/backup-recovery/runs/run-20261118T044037Z/results.json)
+Questionnaire responses identified reported gaps in authentication requirements, assigned security responsibility, written incident procedures, formal awareness training, and technology inventory. The source report also described backups, account provisioning and removal, automatic updates, vendor agreements, and informal awareness practices. These are reported conditions, not independently verified controls.
 
-## Framework approach
+The framework mapping preserves the source report's original references and labels portfolio refinements and suggested follow-up criteria separately. The proposed actions are recommendations; this repository does not claim that the nonprofit implemented them.
 
-CIS Controls v8 is retained to match the source report. The mapping register identifies mappings present in the original report and distinguishes them from additional safeguard-level analysis. Implementation Group 2 and 3 safeguards are labeled. NIST CSF 2.0 functions provide thematic context; they are not presented as official CIS-to-NIST equivalences.
+## Start here
 
-## Scope and limitations
+1. [Executive brief](docs/executive-brief.md) — scope, principal reported gaps, and recommended follow-up.
+2. [Framework mapping register](registers/framework-mapping.csv) — original CIS and NIST references, mapping rationale, and separately labeled refinements.
 
-Reported practices were not independently verified. Risk priorities are provisional; likelihood and impact were not rated. No organizational control effectiveness, implementation, or risk reduction is claimed.
+## Assessment materials
 
-A separate recovery lab used three synthetic files. All restored with matching SHA-256 hashes, and a deliberately altered copy was detected. This demonstrates the lab procedure only; it does not test the nonprofit's backups or recovery capability.
+Continue through the assessment work in this order:
+
+3. [Qualitative risk register](registers/risk-register.csv) — risk scenarios, supporting evidence, and provisional follow-up priorities.
+4. [Proposed remediation plan](registers/remediation-plan.csv) — recommended actions and completion criteria.
+5. [Control-assessment worksheet](registers/control-assessment.csv) — evidence requests, procedures, acceptance criteria, and execution status.
+
+For the full narrative and evidence context, see the [assessment report](docs/assessment.md) and [evidence register](registers/evidence-register.csv).
+
+## Supporting lab
+
+6. [Lab procedure and results](docs/control-testing-lab.md) — readable procedure, acceptance criteria, and actual synthetic-lab outcome.
+
+The [lab README and script](lab/backup-recovery/README.md) explain how to reproduce the exercise. The timestamped [recorded run](lab/backup-recovery/runs/run-20261118T044037Z/results.json) retains machine-readable evidence.
+
+## Limitations
+
+Organizational findings are questionnaire-based and were not independently verified or technically tested. Risk priorities are provisional; likelihood and impact were not rated. No control implementation or risk reduction is claimed. The separate lab used synthetic files and does not validate the nonprofit's controls or recovery capability.
 
 ## Anonymization
 
